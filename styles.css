@@ -28,6 +28,8 @@ header {
     width: 100%;
     z-index: 1000;
     height: 60px; /* Establece la altura del header */
+    border: 1px solid var(--color-principal);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -46,7 +48,7 @@ header {
 
 /* Agrega estilos para la barra de búsqueda */
 .search-input {
-    margin-left: 30px; /* Espacio entre el texto y el input */
+    margin-left: 20px; /* Espacio entre el texto y el input */
     padding: 3px; /* Espaciado interno del input */
     border: 1px solid var(--color-principal); /* Borde del input */
     border-radius: 14px; /* Bordes redondeados */
@@ -56,10 +58,9 @@ header {
 }
 
 
-
 /* Menú Vertical */
 nav ul li a.active {
-    background-color: var(--color-secundario); /* Color de fondo para el menú activo */
+    background-color: var(--color-banner); /* Color de fondo para el menú activo */
     color: white; /* Color del texto */
     font-weight: bold; /* Resaltar texto */
 }
@@ -92,7 +93,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: var(--color-secundario);
+    background-color: var(--color-principal);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de elevación */
 }
 
 article p {
